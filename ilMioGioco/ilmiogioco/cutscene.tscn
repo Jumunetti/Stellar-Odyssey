@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd08bfmpjp5r4"]
+
+[ext_resource type="Script" uid="uid://oaltv8nd7ijb" path="res://cutscene.gd" id="1_8vcau"]
+[ext_resource type="Texture2D" uid="uid://b17a42uc8iwbk" path="res://scenes/Cutscene/c1.jpg" id="1_ye7fo"]
+[ext_resource type="FontFile" uid="uid://d0cbka10alryt" path="res://assets/font/PressStart2P-Regular.ttf" id="3_bl24s"]
+
+[node name="Cutscene" type="Node2D"]
+script = ExtResource("1_8vcau")
+
+[node name="ImageDisplay" type="Sprite2D" parent="."]
+position = Vector2(542, 233)
+scale = Vector2(0.507324, 0.442871)
+texture = ExtResource("1_ye7fo")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DialogBox" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 466.0
+offset_right = 890.0
+offset_bottom = 622.0
+color = Color(0, 0, 0, 1)
+
+[node name="DialogText" type="Label" parent="Control/DialogBox"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 44.0
+offset_right = 617.0
+offset_bottom = 99.0
+theme_override_fonts/font = ExtResource("3_bl24s")
+theme_override_font_sizes/font_size = 50
+text = "ciao eroe"
