@@ -1,0 +1,13 @@
+# Windows/Mac
+.DS_Store
+
+# Godot
+.import/
+.export/
+*.import
+*.tmp
+*.log
+*.cfg~
+
+# Backup di Godot
+*.godot~
